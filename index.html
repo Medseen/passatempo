@@ -6,14 +6,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>Seja bem-vindo ao Jogo da Média!</p>
+      <label><input type="checkbox" id="naoMostrar"> Não mostrar novamente</label><br>
+      <button onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
   <div class="container">
     <h1>Jogo da Média</h1>
-
-    <div id="etapa1">
-      <label for="quantidade">Quantos números você quer digitar?</label>
-      <input type="number" id="quantidade" min="1">
-      <button onclick="iniciar()">Começar</button>
-    </div>
+    <input type="number" id="quantidade" placeholder="Quantos números?" />
+    <button onclick="iniciar()">Começar</button>
 
     <form id="etapa2" style="display: none;" onsubmit="calcularMedia(event)">
       <div id="inputs-container"></div>
