@@ -1,12 +1,11 @@
-alert('Seja bem-vindo ao nosso jogo da média!');
-
-let quantidade = parseInt(prompt('Quantos números você deseja inserir?'));
+alert("Bem vindo ao jogo da média");
+let qtdNum = parseInt(prompt("Quantos números para calcular a média?"));
 let soma = 0;
 
-for (let i = 1; i <= quantidade; i++) {
-  let numero = parseFloat(prompt(`Digite o ${i}º número:`));
-  soma += numero;
+for (let i = 1; i <= qtdNum; i++) {
+  let num = parseInt(prompt(`Digite o ${i}º número:`));
+  soma += num;
 }
 
-let media = soma / quantidade;
-alert(`A média dos ${quantidade} números inseridos é: ${media}`);
+let media = soma / qtdNum;
+alert(`A média dos ${qtdNum} números é igual a ${media}`);
