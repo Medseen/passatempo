@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Média</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo da Média</h1>
+
+    <div id="etapa1">
+      <label for="quantidade">Quantos números você quer digitar?</label>
+      <input type="number" id="quantidade" min="1">
+      <button onclick="iniciar()">Começar</button>
+    </div>
+
+    <form id="etapa2" style="display: none;" onsubmit="calcularMedia(event)">
+      <div id="inputs-container"></div>
+      <button type="submit">Calcular Média</button>
+    </form>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
